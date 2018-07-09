@@ -1,0 +1,23 @@
+<!--pages/JSNewsList/JSNewsList.wxml-->
+<view class='myContainer'>
+  <view class="JSNewsList" wx:if="{{ JSNewsList.length > 0 }}">
+    <block wx:for="{{JSNewsList}}" wx:key="{{item.id}}" >
+      <view  class="item" >
+        <view class="l" bindtap="ToNewDtl" data-NewsList-idUrl="{{item.idUrl}}">
+            <view class="title">{{item.Display_title}}</view>
+            <view class="author">
+              <view> {{item.author}}</view> 
+              <view>{{item.myInterval}}</view> 
+            </view>
+        </view>
+        <view class="r" bindtap='ToDelte' data-NewsList-objectID="{{item.objectID}}">
+            <view class='del'><image src='../../images/deleted.png'></image></view>
+        </view>
+      </view>
+    </block>
+  </view> 
+  <view wx:else>
+      Sorry, there is no Data Reaponsed!Please check your network.If your Network is OK, please contact us!
+  </view>
+</view>
+

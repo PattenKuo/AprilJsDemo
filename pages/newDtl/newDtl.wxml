@@ -1,0 +1,2 @@
+<!--pages/newDtl/newDtl.wxml-->
+<web-view src="{{idUrl}}"></web-view>

@@ -1,0 +1,85 @@
+/* pages/JSNewsList/JSNewsList.wxss */
+page{
+    height: 100%;
+    width: 100%;
+    background: #fff; 
+}
+ .myContainer{
+  height: 100%;
+  width: 100%;
+} 
+
+.break{
+  height: 1rpx;
+  background-color: lightgray;
+  margin: 10rpx 10rpx 
+}
+
+.JSNewsList{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    margin-top: 0rpx;
+}
+
+.JSNewsList .item{
+    height: 126.55rpx;
+    align-items: center;
+    margin-left: 15rpx;
+    display: flex;
+    border-bottom: 1rpx solid #DCD9D9;
+}
+
+.JSNewsList .l{
+    width: 80%;
+    height: 80rpx;
+    overflow: hidden;
+}
+
+.JSNewsList .title{
+    width: 90%;
+    height: 43rpx;
+    font-size: 29rpx;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5.2rpx;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.JSNewsList .author{
+    height: 29rpx;
+    font-size: 29rpx;
+    line-height: 29rpx;
+    overflow: hidden;
+    color: #333;
+    margin-bottom: 6.25rpx;
+    margin-right: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.JSNewsList .time{
+    height: 37rpx;
+    font-size: 25rpx;
+    line-height: 37rpx;
+    overflow: hidden;
+    color: #666;
+}
+
+.JSNewsList .r{
+    width: 20%;
+    height: auto;
+}
+
+.JSNewsList .r .del{
+    margin-left: 30%;
+}
+
+
+.JSNewsList .r .del image{
+    width: 52rpx;
+    height: 52rpx;
+}
